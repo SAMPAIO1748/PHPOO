@@ -42,3 +42,5 @@ echo "<br>";
 echo $objetB->autreCalcul();
 echo "<br>";
 echo $objetB->pasDeCalcul();
+
+// "parent::" permet d'utiliser les éléments de la classe dont on a hérité.
