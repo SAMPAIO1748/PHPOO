@@ -7,7 +7,8 @@ abstract class Vehicule // classe véhicule non instanciable car abstraite
         return 'je demarre';
     }
 
-    abstract public function carburant();
+    abstract public function carburant(); // la méthode est abstraite donc il faudra obligatoirement
+    // redéfinir la méthode dans les class fille (Renault et Peugeot) sinon on aura une erreur.
 
 
     public function nombreTestObligatoire()
