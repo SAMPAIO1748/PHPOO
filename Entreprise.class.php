@@ -49,3 +49,7 @@ echo '<hr>';
 $entreprise->appelUnEmploye('Electricien');
 echo $entreprise->monEmploye2->getSpecialite();
 echo $entreprise->monEmploye2->getHoraires();
+
+echo '<hr>';
+
+var_dump($entreprise);
