@@ -4,6 +4,7 @@
 class Societe
 {
     public $adress;
+    public $nom;
 
     public function __construct()
     {
@@ -30,8 +31,22 @@ class Societe
 }
 
 $societe1 = new Societe;
-$societe1->nom = 'Roger';
-echo $societe1->ville; // la propriété n'existe pas donc il n'affiche rien
-$societe1->bonjour(1, 2, 3);
+$societe1->nom = 'Roger'; // la proprété existe donc il ne renvoie pas à la méthode __set
+$societe1->prenom = "Robert"; // la propriété prenom n'existe pas alors il renvoie vers la méthode __set() 
+echo $societe1->ville; // la propriété n'existe pas donc il renvoie à la méthode __get
+$societe1->bonjour(1, 2, 3); // la méthode n'existe pas donc il renvoie à la méthode __call
 echo '<br>';
 var_dump($societe1);
+print '<pre>';
+print_r($societe1);
+print '<pre>';
+
+/*****************************
+ * Pour informations, d'autres méthodes magiques existe :
+ * __callStatic($nom, $argument) : même effet que call pour les méthodes 'static'
+ * __isset($nom) : se lance lors d'une condition isset ou empty sur une propriété
+ * __desctruct() : se lance à la fin de l'exécution du script. Pratique pour fermer la connexion à la BDD ou fermer un fichier en écriture
+ * __toString() : se lance lotrsqu'on tente d'afficher un objet par un echo.
+ * il y a aussi : __wakeup(), __sleep(), __invoke(), __clone() ...  
+ * 
+ */
