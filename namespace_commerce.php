@@ -2,6 +2,8 @@
 
 namespace Commerce1;
 
+// echo __NAMESPACE__; affiche le namespace dans lequel on est
+
 class Commande
 {
     public $nbCommande = 1;
