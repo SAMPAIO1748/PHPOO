@@ -47,6 +47,6 @@ print '<pre>';
  * __isset($nom) : se lance lors d'une condition isset ou empty sur une propriété
  * __desctruct() : se lance à la fin de l'exécution du script. Pratique pour fermer la connexion à la BDD ou fermer un fichier en écriture
  * __toString() : se lance lotrsqu'on tente d'afficher un objet par un echo.
- * il y a aussi : __wakeup(), __sleep(), __invoke(), __clone() ...  
+ * il y a aussi : __wakeup(), __sleep(), __invoke(), __clone() ...
  * 
  */
