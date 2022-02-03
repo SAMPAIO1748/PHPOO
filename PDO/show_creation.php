@@ -28,6 +28,7 @@
     // Execution de la requête
     $resultat = $requete->fetch(PDO::FETCH_ASSOC);
     // Rangement du résultat dans un tableau
+    // fecth récupère le dernier résultat de la requête et le range dans un tableau
 
     //var_dump($resultat);
 

@@ -29,8 +29,10 @@
     // Execution de la requête
     $resultat = $requete->fetchAll(PDO::FETCH_ASSOC);
     // Mise sous forme de tableau (associatif) du résultat
+    // la fonction fetchAll récupère toutes les eentées de la requete et les range dans un tableau
+    // PDO::FETCH_ASSOC fait que le tableau créer est un tableau associatif.
 
-    //var_dump($resultat);
+    var_dump($resultat);
 
     ?>
 
