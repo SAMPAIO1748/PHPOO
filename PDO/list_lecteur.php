@@ -48,7 +48,8 @@
                                 $lecteur['adresse'] . "</td><td>" .
                                 $lecteur['code_postal'] . "</td><td>" .
                                 $lecteur['date_naissance'] . "</td><td><a href='update_form_lecteur.php?id=" .
-                                $lecteur['id'] . "'>Modifier le lecteur</a></td></tr>";
+                                $lecteur['id'] . "'>Modifier le lecteur</a></td><td><a href='delete_lecteur.php?id=" .
+                                $lecteur['id'] . "'>Supprimer le lecteur</a></td></tr>";
                         }
 
                         ?>
