@@ -32,7 +32,7 @@
     // la fonction fetchAll récupère toutes les eentées de la requete et les range dans un tableau
     // PDO::FETCH_ASSOC fait que le tableau créer est un tableau associatif.
 
-    var_dump($resultat);
+    //var_dump($resultat);
 
     ?>
 
@@ -56,13 +56,14 @@
                     $creation['titre'] . "</a></td><td>" .
                     $creation['description'] . "</td><td>" .
                     $creation['galerie'] . '</td><td>' .
-                    $creation['date_creation'] . '</td></tr>';
+                    $creation['date_creation'] . "</td><td><a href='update_form_creation.php?id=" .
+                    $creation['id'] . "'>Modifier la création</a></td></tr>";
             }
 
             ?>
 
         </tbody>
-
+        <---- Faire le update pour le lecteur -->
 
     </table>
 
