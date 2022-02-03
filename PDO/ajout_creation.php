@@ -24,3 +24,5 @@ $requete->execute();
 
 header('Location: list_creation.php');
 // Redirection vers la page list_creation.php
+
+// Exercice : Créer le code qui permet d'enregistrer un nouveau lecteur dans la bdd.
