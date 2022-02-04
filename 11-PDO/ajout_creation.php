@@ -26,3 +26,15 @@ header('Location: list_creation.php');
 // Redirection vers la page list_creation.php
 
 // Exercice : Créer le code qui permet d'enregistrer un nouveau lecteur dans la bdd.
+
+
+
+
+
+
+
+
+
+
+
+// Exercice : faire le CRUD complet sur la table genre de la bdd bibliotheque
