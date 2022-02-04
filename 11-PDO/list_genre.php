@@ -33,7 +33,7 @@
             foreach ($resultat as $genre) {
                 echo "<tr><td><a href='show_genre.php?id=" .
                     $genre['id'] . "'>" .
-                    $genre['libelle'] . "</a></td><td><a href='update_form-genre.php?id=" .
+                    $genre['libelle'] . "</a></td><td><a href='update_form_genre.php?id=" .
                     $genre['id'] . "'>Modifier le genre</a></td><td><a href='delete_genre.php?id=" .
                     $genre['id'] . "'>Supprimer le genre</a></td></tr>";
             }
